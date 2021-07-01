@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #eee;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+section {
+  margin: 2rem 0 1rem 0;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+input {
+  text-align: center;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 1.5rem;
+}
+
+button {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: #de2458;
+  color: white;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  border-radius: 2rem;
+}
+
+button:hover {
+  background-color: #ff0000;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.nutrients ul {
+  display: flex;
+  width: 45rem;
+  justify-content: space-evenly;
+}
+
+.meals {
+  display: flex;
+  text-align: center;
+}
+
+.mealtitle {
+  color: rgb(115, 107, 107);
+}
+
+img {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  margin: 0 1rem;
+  max-width: 300px;
+  box-shadow: 0 4px 8px 2px rgba(157, 176, 131, 0.15);
+  border-radius: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.instructions {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.instructions > li {
+  color: rgb(115, 107, 107);
+}
+
+a {
+  text-decoration: none;
+  background-color: #de2458;
+  color: #f3f3f3;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  margin: 0 auto;
+  border-radius: 2rem;
+}
+
+a:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+  .meals {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nutrients ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
